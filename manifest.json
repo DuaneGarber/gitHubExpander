@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Git Hub FS Code",
+  "version": "0.0.1",
+  "description": "Manipulate the Github DOM to allow for full screen veiwing",
+  "browser_action": {
+    "name": "Git Big",
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-3.1.1.min.js", "background.js" ],
+    "matches": [ "http://*.github.com/*", "https://*.github.com/*"]
+  }]
+}
